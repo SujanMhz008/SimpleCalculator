@@ -18,7 +18,7 @@
 
     <Button
         android:id="@+id/btnClear"
-        android:layout_width="wrap_content"
+        android:layout_width="98dp"
         android:layout_height="wrap_content"
         android:layout_margin="2.5dp"
         android:background="@color/colorPrimary"
