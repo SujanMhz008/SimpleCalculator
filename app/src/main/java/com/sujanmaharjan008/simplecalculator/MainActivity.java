@@ -6,12 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.sujanmaharjan008.simplecalculator.Functions.Calculations;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private EditText edtNumber;
+    private TextView edtNumber;
     private Button btnNum1, btnNum2, btnNum3, btnNum4, btnNum5, btnNum6, btnNum7, btnNum8, btnNum9, btnNum0, btnPlus, btnSub, btnMultiply, btnDivide, btnPercent, btnEquals, btnClear;
     private boolean checkAdd, checkSubtract, checkMultiply, checkDivide, checkPercentage;
     private int firstNumber, secondNumber, result;
@@ -64,7 +65,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         String number = edtNumber.getText().toString();
         if (number.equals("0")) {
-            edtNumber.getText().clear();
+            edtNumber.getText();
+            edtNumber.setText("");
             number = edtNumber.getText().toString();
         }
         switch (v.getId()) {
