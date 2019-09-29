@@ -8,19 +8,23 @@ public class Calculations {
         this.secondNumber = secondNumber;
     }
 
-    public int Add(){
+    public int Add() {
         return firstNumber + secondNumber;
     }
-    public int Subtract(){
+
+    public int Subtract() {
         return firstNumber - secondNumber;
     }
-    public int Multiply(){
+
+    public int Multiply() {
         return firstNumber * secondNumber;
     }
-    public int Divide(){
-        return firstNumber/secondNumber;
+
+    public int Divide() {
+        return firstNumber / secondNumber;
     }
-    public int Percent(){
-        return ((firstNumber*100)/secondNumber);
+
+    public int Percent() {
+        return ((firstNumber * 100) / secondNumber);
     }
 }
